@@ -1,0 +1,1 @@
+var loader;function loadNow(e){e<=0?displayContent():(loader.style.opacity=e,window.setTimeout((function(){loadNow(e-.05)}),50))}function displayContent(){loader.style.display="none",document.getElementById("content").style.display="block"}document.addEventListener("DOMContentLoaded",(function(){loader=document.getElementById("loader"),loadNow(1)}));
